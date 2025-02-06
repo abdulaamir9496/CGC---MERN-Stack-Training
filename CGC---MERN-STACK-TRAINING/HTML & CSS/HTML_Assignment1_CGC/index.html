@@ -78,8 +78,9 @@
                 <li>
                     <strong>HTML Tags:</strong> 
                     like h1 to h6, p, strong, br, li, ul, ol, a, img, etc.
-
-                    <select name="" id="">
+                    
+                    <label for="html-tags-select">Choose an HTML tag:</label>
+                    <select id="html-tags-select">
                         <option value="">h1 tag</option>
                         <option value="">h2 tag</option>
                         <option value="">h3 tag</option>
@@ -101,7 +102,8 @@
                     <strong>Forms :</strong>
                     input, textarea, select, checkbox, radio, etc.
                     
-                    <select name="" id="">
+                    <label for="form-select">Choose a form element:</label>
+                    <select id="form-select">
                         <option value="">input</option>
                         <option value="">textarea</option>
                         <option value="">select</option>
@@ -110,21 +112,25 @@
                         <option value="">radio button</option>
                     </select>
                 </li>
-                <li>Relative Path and Absolute Path.
-                    <select name="" id="">
+                <li>
+                    <strong>Relative Path and Absolute Path.</strong>
+                    <label for="path-select">Choose a path type:</label>
+                    <select id="path-select">
                         <option value="">Relative Path</option>
                         <option value="">Absolute Path</option>
                     </select>
-
                 </li>
-                <li>List Tags
-                    <select name="" id="">
+                <li>
+                    <strong>List Tags</strong>
+                    <label for="list-tags-select">Choose a list type:</label>
+                    <select id="list-tags-select">
                         <option value="">Order List</option>
                         <option value="">Un-order List</option>
                     </select>
                 </li>
                 <li>Table Tags
-                    <select name="" id="">
+                    <label for="table-tags-select">Choose a table element:</label>
+                    <select id="table-tags-select">
                         <option value="">Table</option>
                         <option value="">Thead</option>
                         <option value="">Tbody</option>
@@ -132,8 +138,10 @@
                         <option value="">Th</option>
                         <option value="">Td</option>
                     </select>
+                </li>
                 <li>Block level Elements and Inline Elements
-                    <select name="" id="">
+                    <label for="element-type-select">Choose an element type:</label>
+                    <select id="element-type-select">
                         <option value="">Block level Elements</option>
                         <option value="">Inline Elements</option>
                     </select>
@@ -171,31 +179,32 @@
         <img src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Web Development Image" height="400px" width="700px">
         <br>
         <br>
-        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank">Check Out our courses and Training for Web Development</a>
+        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank" rel="noopener">Check Out our courses and Training for Web Development</a>
         <br>
         <br>
         
         <div>
             <form action="">
                 <label for="name">Name:</label>
-                <input type="text" required>
+                <input type="text" id="name" placeholder="Enter your name" required>
                 <br>
-                <label for="Email">Email:</label>
-                <input type="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
                 <br>
-                <label for="Message" >Enter your message:</label>
-                <input type="Message" name="Message" required>
+                <label for="message">Enter your message:</label>
+                <input type="text" id="message" name="message" placeholder="Type your message here" required>
                 <br>
                 <label for="password">Password</label>
-                <input type="text" name="password" required>
+                <input type="password" id="password" placeholder="Enter your password" required>
                 <br>
-                <label for="Re-enter Password">Re-enter Password</label>
-                <input type="password" name="password" required>
+                <label for="re-enter-password">Re-enter Password</label>
+                <input type="password" id="re-enter-password" name="password" placeholder="Re-enter your password" required>
                 <br>
-                <label type="checkbox">I have read all the terms and conditions</label>
-                <input type="checkbox">
+                <label>
+                    <input type="checkbox" required> I have read all the terms and conditions
+                </label>
                 <br>
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </main>

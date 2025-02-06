@@ -48,3 +48,8 @@
     /* flex-shrink: 2; */
 }
 
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
