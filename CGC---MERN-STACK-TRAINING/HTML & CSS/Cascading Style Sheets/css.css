@@ -1,0 +1,57 @@
+/* div {
+    width: auto; */
+    /* height: 120px; */
+    /* background-color: aquamarine; */
+    /* overflow:hidden; */
+    /* overflow: scroll; */
+    /* overflow: visible; */
+    /* overflow-x: hidden; */
+    /* overflow-y: scroll; */
+    /* overflow-wrap: anywhere; */
+    /* overflow-wrap: break-word; */
+    /* overflow-wrap:normal; */
+
+    /* font-size: 25px;
+    color:brown;
+    align-items: center;
+    justify-content: center;
+    display: flex; */
+/* } */
+
+/* div { */
+    /* width: auto; */
+    /* height:max-content; */
+    /* background-image: linear-gradient(to top, cyan, green, yellow); */
+    /* background-image: linear-gradient(145deg, cyan, green, yellow); */
+    /* background-image: radial-gradient(cyan 30%, green 40%, rgb(148, 38, 75) 30%); */
+    /* background-image: ellipse(50% 50% at 50% 50%, cyan, green, yellow); */
+/* } */
+
+
+/* shadow : text-shadow & box-shadow     */
+.gradient {
+    text-shadow: 2px 2px 2px red;
+    padding: 50px;
+    margin: 50px;
+    background-image: linear-gradient(145deg, cyan, green, yellow);
+}
+
+.box-shadow {
+    padding: 50px;
+    margin: 50px;
+    box-shadow: 10px 10px 10px 10px red;
+    text-shadow: 4px 4px 4px rgb(4, 35, 155);
+    background-color:burlywood;
+}
+
+.box-shadow:hover {
+    box-shadow: 10px 10px 10px 10px green;
+    text-shadow: 4px 4px 4px rgb(4, 35, 155);
+    background-color:blueviolet;
+}
+
+.box-shadow:checked {
+    box-shadow: 10px 10px 10px 10px green;
+    text-shadow: 4px 4px 4px rgb(4, 35, 155);
+    background-color:blueviolet;
+}
