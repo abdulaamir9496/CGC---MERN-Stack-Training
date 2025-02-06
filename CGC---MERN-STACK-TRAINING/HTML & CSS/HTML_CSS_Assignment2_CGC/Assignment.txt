@@ -1,0 +1,27 @@
+
+Instructions:
+- This assignment consists of 2 questions.
+- Each question carries 10 marks.
+- Write clean and semantic HTML and CSS code.
+- Submit the assignment in a single HTML file with an external CSS file.
+- Ensure proper usage of the Box Model, Positioning, and Selectors.
+
+
+Question 1: HTML Structure & Semantic Elements (10 Marks)
+Create a webpage using HTML that includes the following elements:
+- A header with a title and a navigation menu containing 3 links.
+- A section with a paragraph and an image.
+- A footer with contact details.
+Ensure the usage of semantic elements like <header>, <nav>, <section>, and <footer>.
+
+
+Question 2: CSS Styling & Layout (10 Marks)
+Style the webpage created in Question 1 using CSS. Implement the following:
+- Use different selectors (class, ID, and attribute selectors) to style elements.
+- Apply a background color to the header and footer.
+- Style the navigation menu with hover effects.
+- Implement the Box Model for section elements with padding and margins.
+- Position the image inside the section using absolute or relative positioning.
+
+Convert the below design to code.
+Checkout in images folder for more information.
