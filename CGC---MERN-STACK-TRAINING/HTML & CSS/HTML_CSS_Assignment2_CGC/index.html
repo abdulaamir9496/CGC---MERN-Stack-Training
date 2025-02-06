@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Structure & Semantic Elements</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+    <!-- Question 1: HTML Structure & Semantic Elements (10 Marks) -->
+    
+    <!-- - Ensure proper usage of the Box Model, Positioning, and Selectors. -->
+
+    <!-- A header with a title and a navigation menu containing 3 links -->
+    <header>
+        <div class="navigationBar">
+            <div class="navbarStart">
+                <h1>Healthy Food</h1>
+            </div>
+        
+            <div class="navbarEnd">
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/service">Service</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+    
+    <!-- A section with a paragraph and an image. -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            At Healthy Food, we are passionate about providing nutritious, delicious, and well-balanced meals for a healthier lifestyle. 
+            Our goal is to make healthy eating both accessible and enjoyable for everyone.
+        </p>
+        <img src="./images/pre-workout-meals.jpg" alt="A nutritious pre-workout meal to fuel your energy" width="300" height="200">
+    </section>
+    
+    <hr>
+
+    <section id="service">
+        <h2>Our Services</h2>
+        <p>
+            We offer a wide variety of meal plans, including:
+            <ul>
+                <li>Customized diet meal plans</li>
+                <li>Weight-loss meal kits</li>
+                <li>High-protein fitness meals</li>
+                <li>Organic and fresh ingredient-based meals</li>
+            </ul>
+            Whether you're looking to build muscle, lose weight, or just eat cleaner, we have a plan for you!
+        </p>
+        <img src="./images/healthy-breakfast.jpg" alt="A delicious and healthy breakfast option" width="300" height="200">
+    </section>
+    
+    <hr>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>
+            Have any questions or need a personalized meal plan? Reach out to us!  
+            We are available via email, phone, or our social media platforms.
+        </p>
+        <img src="./images/diet-meal.jpg" alt="A well-balanced diet meal plan for a healthy lifestyle" width="300" height="200">
+    </section>
+    
+    
+    <hr>
+
+    <!-- Convert the below design to code: Create a user card.
+    Checkout in images folder for more information. -->
+    <div class="container">
+        <div class="cover-photo">
+            <img class="profile" src="./images/mohammad-faruque.jpg" alt="User's image">
+        </div>
+
+        <!-- user name below user image logo -->
+        <div class="profile-name">Abdul Aamir</div>
+
+        <div class="city-country">Hyderabad, India</div>
+
+        <!-- user city & country below user name -->
+        <p class="about">Full Stack Web Developer & UI/UX Front-End Developer</p>
+
+        <!-- user skill set below user city & country -->
+        <button class="msg-btn">Message</button>
+        <button class="follow-btn">Following</button>
+
+        <!-- create 5 buttons to reach this user by using different social platforms: GitHub, Frontend Member, LinkedIn, Twitter, Instagram. -->
+        <div class="social-links">
+            <button class="connect">GitHub</button>
+            <button class="connect">Front-End Mentor</button>
+            <button class="connect">LinkedIn</button>
+            <button class="connect">Twitter</button>
+            <button class="connect">Instagram</button>
+        </div>
+
+        <!-- create icon for contacting just by clicking on it. -->
+        <div>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- - A footer with contact details. -->
+    <footer>
+        <div class="footer">
+            <p><strong>Contact Us:</strong></p>
+            <p>Email: contact@dummywebsite.com</p>
+            <p>Phone: +1 (234) 567-8908</p>
+            <p>Address: 1234 st.ToliChowki, Hyderabad, 500008</p>
+        
+            <div>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

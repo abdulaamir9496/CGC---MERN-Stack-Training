@@ -1,0 +1,171 @@
+/* Question 2: CSS Styling & Layout (10 Marks) */
+
+/* - Ensure proper usage of the Box Model, Positioning, and Selectors. */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    margin: 0;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    background-color: #cdf3c3;
+    color: #131212;
+}
+
+.navigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f97a50b4;
+    color: #fff;
+}
+
+.navbarEnd {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbarEnd nav ul {
+    display: flex;
+    list-style: none;
+    gap: 90px;
+}
+
+.navbarEnd nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.container {
+    margin: 100px auto;
+    background: #231e39;
+    color: #b3b8cd;
+    border-radius: 10px;
+    width: 500px;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0, 10px, 20px, -10px, rgba(0, 0, 0, .75);
+}
+
+.cover-photo {
+    background: url(./images/cover-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 160px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.profile {
+    display: block;
+    margin: -60px auto 0; /* Center the profile image */
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid #1f1a32;
+    padding: 5px;
+    background: #292343;
+}
+
+.profile-name {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.about {
+    margin-top: 35px;
+    line-height: 21px;
+}
+
+button {
+    margin: 10px 0 40px 0;
+}
+
+.msg-btn, .follow-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #03bfbc;
+    border: 1px solid #03bfbc;
+    padding: 10px 25px;
+    color: #231e39;
+    border-radius: 3px;
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+}
+
+.follow-btn {
+    margin-left: 10px;
+    background: transparent;
+    color: #02899c;
+}
+
+.follow-btn:hover {
+    color: #231e39;
+    background: #03bfbc;
+    transition: .5s;
+}
+
+.social-links {
+    display:grid;
+    justify-content:space-evenly;
+    margin-top: 20px;
+    background-color: #12121268;
+    padding-top: 30px;
+}
+
+.connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #4d4f55;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+}
+
+.container i {
+    padding-left: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .5c;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #c0c7c7;
+    color: #000000;
+    text-align: center;
+    height: 10vh;
+}
