@@ -1,0 +1,13 @@
+.boder {
+    width: 50vw;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: darkblue;
+    padding-left: 10px;
+
+
+    /* shorthand property:
+     */
+
+
+    }
