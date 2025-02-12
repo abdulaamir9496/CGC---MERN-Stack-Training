@@ -85,6 +85,7 @@ body {
     position: relative;
     overflow: hidden;
     z-index: 1; /* Ensure the home section is below social icons */
+
 }
 
 .home-content {
@@ -214,8 +215,12 @@ body {
 .home-sci {
     display: flex;
     justify-content: start;
+    flex-direction: row;
+    position: absolute;      /* Position relative to the .home section */
+    bottom: 20px;            /* Distance from the bottom of the .home section */
+    left: 10%;               /* Align it to the left, adjust as needed */
     gap: 15px;
-    margin-top: 30px;
+    margin-top: 20px;
     opacity: 0;
     animation: fadeInUp 1s ease-in-out 1s forwards;
     z-index: 3; /* Ensure social icons appear above everything else */
@@ -265,6 +270,8 @@ body {
     padding: 80px 10%;
     background: rgba(10, 43, 61, 0.9);
     text-align: center;
+    justify-content: space-around;  /* Space between items */
+    gap: 20px;  /* Adjust space between items */
 }
 
 .experience h2 {
@@ -296,11 +303,23 @@ body {
 }
 
 /* Projects Section */
-.project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+/* Project container setup */
+.projects {
+    padding: 80px 10%;
+    background: #081b29;
+    text-align: center;
+    display: flex; /* Use flexbox to arrange items */
+    flex-wrap: wrap; /* Wrap items if necessary */
+    justify-content: space-between; /* Distribute space between items */
+    gap: 25px; /* Adjust space between items */
+}
+
+.project-list {
+    display: flex; /* Flex display for the project items */
+    flex-wrap: wrap; /* Ensure wrapping occurs when screen size is smaller */
+    justify-content: space-between; /* Space between the items */
+    gap: 25px; /* Gap between items */
+    width: 100%;
 }
 
 .project {
@@ -309,10 +328,11 @@ body {
     border-radius: 10px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
-    width: 320px;
+    width: calc(25% - 25px); /* Set the width of each project */
     text-align: center;
     border: 1px solid #00abf0;
     box-shadow: 0 4px 10px rgba(0, 171, 240, 0.2);
+    margin-bottom: 25px; /* Add bottom margin for spacing */
 }
 
 .project:hover {
@@ -333,28 +353,39 @@ body {
     transform: scale(1.05);
 }
 
-
-.projects {
-    padding: 80px 10%;
-    background: #081b29;
-    text-align: center;
+/* Make the project take full width on small screens (e.g., mobile) */
+@media (max-width: 768px) {
+    .project {
+        width: calc(50% - 25px); /* Two projects per row on medium screens */
+    }
 }
 
-.project {
-    background: #0a2b3d;
-    padding: 20px;
-    border-radius: 10px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.project:hover {
-    background: #00abf0;
-    color: #081b29;
-    transform: scale(1.05);
+/* Make the project take full width on very small screens */
+@media (max-width: 480px) {
+    .project {
+        width: 100%; /* Full width on mobile screens */
+    }
 }
 
 /* Contact Section */
+
+contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    padding: 50px; /* Add padding around the section */
+    margin: 0 auto; /* Auto margin for centering the section */
+    min-height: 100vh; /* Ensure the section takes full height of the viewport */
+}
+
+/* Styling for the "Hire Me" heading */
+.hire-me {
+    text-align: center; /* Center the text horizontally */
+    font-size: 2rem; /* Adjust the font size */
+    margin-bottom: 30px; /* Add space between heading and form */
+}
+
 .contact form {
     max-width: 500px;
     margin: 0 auto;
