@@ -1,0 +1,29 @@
+🚀 New Features Explained
+
+✅ 1. Dark Mode Toggle
+Click the "🌙 Dark Mode" button to switch between Light Mode & Dark Mode.
+Uses CSS classes (dark-mode) to apply dark colors.
+
+✅ 2. Download Bill as PDF (Text File)
+After calculating the bill, click "Download PDF".
+Saves the bill details as a text file (Electricity_Bill.txt).
+
+✅ 3. Save Previous Bills in Local Storage
+Every bill calculated is saved in the browser's local storage.
+When you refresh the page, previous bills are not lost.
+
+✅ 4. Display & Delete Previous Bills
+Saved bills are shown in a history list.
+Delete any bill from the list using the ❌ button.
+
+✅ 5. Reset Fields Button
+Clears input fields and removes the displayed bill.
+
+---
+🔥 How It Works?
+1. Enter the power units used.
+2. Click "Calculate" → The total bill is shown.
+3. Click "Download PDF" → Saves bill as a text file.
+4. Previous bills are saved & displayed in the history list.
+5. Click ❌ to remove a bill from history.
+6. Click "Reset" to clear inputs.

@@ -1,0 +1,6 @@
+New Features Added
+
+✅ QR Code for UPI Payment
+✅ Graph for Usage Trends (Line Chart)
+
+Now, users can pay directly using UPI and track electricity usage trends!

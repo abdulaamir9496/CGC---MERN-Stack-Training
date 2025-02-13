@@ -1,0 +1,29 @@
+JavaScript that calculates the total bill based on power units consumed.
+
+Breakdown of JavaScript Logic
+
+1. User Inputs:
+The script reads the number of power units entered in the input field.
+
+2. Validation:
+Ensures the input is a valid number and not negative.
+
+3. Switch-Case for Tariffs:
+Different rates apply based on unit consumption:
+
+First 50 units → ₹3.50/unit
+Next 100 units → ₹4.50/unit
+Next 100 units → ₹5.50/unit
+Above 250 units → ₹6.50/unit
+
+4. Logical & Arithmetic Operators:
+Ternary (? :) operator applies a 5% service charge for bills above ₹300.
+
+5. Loops (while, do while, for):
+A while loop prints meter readings.
+---
+How It Works?
+1. Enter the power units used.
+2. Click the "Calculate" button.
+3. The total bill is displayed based on slabs & units consumed.
+4. Meter readings are displayed using a loop.
