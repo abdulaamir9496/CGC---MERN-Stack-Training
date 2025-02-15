@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cab Fare Calculator</title>
+</head>
+<body>
+    <script>
+        function calculateCabFare(distance) {
+            let fare = 0;
+            
+            if (distance <= 5) {
+                fare = distance * 10;
+            } else if (distance <= 15) {
+                fare = (5 * 10) + ((distance - 5) * 8);
+            } else {
+                fare = (5 * 10) + (10 * 8) + ((distance - 15) * 5);
+            }
+            
+            return `Total cab fare: Rs.${fare}`;
+        }
+        
+        var distance = prompt("Enter the distance in km: ");
+        distance = Number(distance);
+        var result = calculateCabFare(distance);
+        alert(result);
+    </script>
+</body>
+</html>
