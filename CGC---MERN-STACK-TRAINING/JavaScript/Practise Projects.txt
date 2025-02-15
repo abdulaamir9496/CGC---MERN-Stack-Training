@@ -1,0 +1,40 @@
+Welcome to JavaScript TOPICS wise practice.
+    
+1. If-Else Statement Project: Grading System
+Project: Create a simple grading system where users enter their marks, and the program assigns a grade based on predefined conditions.
+
+    Logic: <br>
+
+    If marks ≥ 90 → Grade A <br>
+
+    If marks ≥ 80 → Grade B <br>
+
+    If marks ≥ 70 → Grade C <br>
+
+    If marks ≥ 60 → Grade D <br>
+
+    Else → Fail
+
+2. Switch Statement Project: Day of the Week.
+Project: Create a simple program that tells the user which day of the week it is based on the number they enter.
+
+3. For Loop Project: Multiplication Table.
+Project: Create a program that generates a multiplication table for a number entered by the user.
+
+4. While Loop Project: Guess the Number.
+Project: Create a simple number guessing game where the computer generates a random number, and the user has to guess it.
+
+5. Functions Project: Calculator.
+Project: Create a simple calculator that performs basic arithmetic operations like addition, subtraction, multiplication, and division.
+
+6. Arrays Project: To-Do List.
+Project: Create a simple to-do list where users can add, delete, and mark tasks as completed.
+
+7. Objects Project: Address Book.
+Project: Create an address book where users can add, delete, and update contacts.
+
+8. DOM Manipulation Project: Color Flipper.
+Project: Create a simple color flipper that changes the background color of the page to a random color.
+
+9. Events Project: Counter.
+Project: Create a simple counter that increments or decrements based on user input.
