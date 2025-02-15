@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdrawal Amount From ATM/ Bank</title>
+</head>
+<body>
+    <script>
+        function withdrawAmount(withdrawalAmount, availableBalance) {
+            // Convert input to a number
+            withdrawalAmount = Number(withdrawalAmount);
+            
+            // Check if the amount is in valid denominations
+            if (![100, 200, 500, 2000].includes(withdrawalAmount)) {
+                return "Invalid amount. Enter Rs.100, Rs.200, Rs.500, or Rs.2000 only.";
+            }
+            
+            // Check if sufficient balance is available
+            if (withdrawalAmount > availableBalance) {
+                return "Insufficient balance.";
+            }
+            
+            // Deduct the amount and return new balance
+            availableBalance -= withdrawalAmount;
+            return `Withdrawal successful. Remaining balance: Rs.${availableBalance}`;
+        }
+        
+        var withdrawalAmount = prompt("Enter the amount you want to withdraw: ");
+        var availableBalance = 10000;
+        var result = withdrawAmount(withdrawalAmount, availableBalance);
+        alert(result);
+    </script>
+</body>
+</html>
