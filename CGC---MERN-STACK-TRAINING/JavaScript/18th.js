@@ -20,12 +20,10 @@
 // var txt = name.substring(0, 5);
 // console.log(txt);
 
-
 // //concatenate
 // var name = "Abdul Aamir";
 // var txt = name.concat(" is a good boy");
 // console.log(txt); //Abdul Aamir is a good boy
-
 
 //var name = "Abdul Aamir";
 var txt = name.at(0);
