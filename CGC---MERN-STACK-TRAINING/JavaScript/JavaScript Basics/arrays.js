@@ -1,3 +1,7 @@
+//array is a list of items in the form of variables 
+// that are stored in a single variable.
+//behind the scene array acts as string 
+
 var fruits = ["kiwi", "mango", "banana", "apple", "Grapes"];
 
 // console.log(fruits.slice(0, 3), fruits); //end element is skipped

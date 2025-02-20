@@ -1,0 +1,78 @@
+
+<!-- 1. Write a function that takes a withdrawal amount and available balance as inputs. 
+The withdrawal amount must be in multiples of ₹100, ₹200, ₹500, or ₹2000.
+If the amount is valid and the balance is sufficient, deduct it and return the new balance. 
+Otherwise, return an appropriate error message. -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdrawal Amount From ATM/ Bank</title>
+</head>
+<body>
+    <script>
+        function withdrawAmount(withdrawalAmount, availableBalance) {
+            // Convert input to a number
+            withdrawalAmount = Number(withdrawalAmount);
+            
+            // Check if the amount is in valid denominations
+            if (![100, 200, 500, 2000].includes(withdrawalAmount)) {
+                return "Invalid amount. Enter Rs.100, Rs.200, Rs.500, or Rs.2000 only.";
+            }
+            
+            // Check if sufficient balance is available
+            if (withdrawalAmount > availableBalance) {
+                return "Insufficient balance.";
+            }
+            
+            // Deduct the amount and return new balance
+            availableBalance -= withdrawalAmount;
+            return `Withdrawal successful. Remaining balance: Rs.${availableBalance}`;
+        }
+        
+        var withdrawalAmount = prompt("Enter the amount you want to withdraw: ");
+        var availableBalance = 10000;
+        var result = withdrawAmount(withdrawalAmount, availableBalance);
+        alert(result);
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdrawal Amount From ATM/Bank</title>
+</head>
+<body>
+    <script>
+        function withdrawAmount(withdrawalAmount, availableBalance) {
+            // Convert input to a number
+            withdrawalAmount = Number(withdrawalAmount);
+            
+                // Check if the withdrawal amount is divisible by any of the valid denominations
+                if (![100, 200, 500, 2000].some(denomination => withdrawalAmount % denomination === 0)) {
+                    return "Invalid amount. Enter an amount divisible by ₹100, ₹200, ₹500, or ₹2000.";
+                }
+                
+            // Check if sufficient balance is available
+            if (withdrawalAmount > availableBalance) {
+                return "Insufficient balance.";
+            }
+            
+            // Deduct the amount and return new balance
+            availableBalance -= withdrawalAmount;
+            return `Withdrawal successful. Remaining balance: Rs.${availableBalance}`;
+        }
+        
+        var withdrawalAmount = prompt("Enter the amount you want to withdraw: ");
+        var availableBalance = 10000;
+        var result = withdrawAmount(withdrawalAmount, availableBalance);
+        alert(result);
+    </script>
+</body>
+</html>
