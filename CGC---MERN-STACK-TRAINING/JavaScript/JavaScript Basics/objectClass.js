@@ -1,4 +1,6 @@
 //3rd way of creating a new instance of the object using class constructor.
+//constructor is used to create a simple object. Constructor is inbuilt method in js.
+//constructor is used to create a new instance of the object.
 //benefit of using class is we get inheritance. we have base class on top of it we can add few more features based on base class.
 //
 
