@@ -1,5 +1,5 @@
 //real life/world entities wth has properties in it. values , 
-// vales canbe any data types. No restrction.
+// vales can be any data types. No restriction.
 //heterogenous and homogenous properties
 //stores the data in the key and values
 
@@ -99,7 +99,9 @@ var contact1 = {
 var selectedNumOjb = contact1.number[1];
 console.log(selectedNumOjb.value); //987643210
 
-function callPrimaryNumb  
+function callPrimaryNumb() {
+
+}
 
 // var selectedNumOjb = contact1.number[0].value;
 // console.log(selectedNumOjb.value); //undefined
