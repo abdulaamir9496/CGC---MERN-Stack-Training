@@ -10,10 +10,7 @@ Supports deposit and withdrawal operations.
 
 Displays account details.
 
-
-
 ---
-
 Implementation:
 
 class BankAccount {
@@ -62,9 +59,7 @@ bankAccounts[1].withdraw(3000); // Withdrawing ₹3000 from John Doe's account
 console.log("\nAll Bank Accounts:");
 bankAccounts.forEach(account => console.log(account.getDetails()));
 
-
 ---
-
 Expected Output:
 
 Deposited ₹2000 into Account 101. New Balance: ₹7000
@@ -74,5 +69,3 @@ All Bank Accounts:
 Account No: 101, Holder: Aamir, Balance: ₹7000
 Account No: 102, Holder: John Doe, Balance: ₹7000
 Account No: 103, Holder: Jane Doe, Balance: ₹7500
-
-Would you like to add more features, such as interest calculation or transaction history?
