@@ -8,12 +8,14 @@ var mobile1 = {
 };
 
 // inheritance of property: using enumerable and writable
-// what is enumerable and writable ?
+// what is enumerable(makes property visible) and writable(changing property) ?
 // enumerable: true or false
 // writable: true or false
 
+//Object.create why we use ? to have more control in big projects like database modeletc.,
+
 var mobile = Object.create(mobile1, {
-    brand: {value: "Apple", enumerable: true, writable: true}
+    brand: {value: "Apple", enumerable: true, writable: true, configurable: false}
 });
 
 var mobile = Object.create(
@@ -25,7 +27,7 @@ var mobile = Object.create(
 // console.log(mobile); //{}
 // console.log(mobile.brand); //Apple
 
-// manuplate property:
+// manipulate property:
 mobile.brand = "Samsung";
 console.log(mobile); //Samsung
 
