@@ -43,6 +43,8 @@ console.log(people);
 const adults = people.filter(person => person.isAdult());
 console.log(adults);
 
+// ----------------------------------------------------------------
+
 // Part 4: Object Manipulation and Nested Object Access
 // Task 4: Object Manipulation
 // 1. Create an object car with the following properties:
@@ -76,6 +78,7 @@ console.log(car.model);
 // Log the updated object.   ✅
 console.log(car);
 
+// ----------------------------------------------------------------
 
 // Task 5: Accessing Nested Objects in an Array
 // 1. Create an array students containing multiple objects, each representing a student with the following properties:  ✅
