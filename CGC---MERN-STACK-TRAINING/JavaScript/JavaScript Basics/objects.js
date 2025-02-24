@@ -9,6 +9,13 @@
 // can be any data type (including functions, called methods).  
 // #### **Example of an Object**
 
+
+//Types of creating objects: 4 types
+//template literal object
+//constructor method object
+//class a bit complex way of creating a new object
+//Object.create({obj name}, {}); //another way of creating a new object
+
 let person = {
   name: "Aamir",    // Property (key-value pair)
   age: 28,          // Number property
