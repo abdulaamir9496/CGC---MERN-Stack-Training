@@ -1,0 +1,60 @@
+TDC FullStack Assignment No. 5
+Part 1: Strings and String Methods
+Task 1: String Manipulation
+1. Declare a string variable sentence with the value:
+"JavaScript is a powerful and popular programming language." ✅
+2. Perform the following operations and log the results:
+Convert the string to uppercase.✅
+Convert the string to lowercase. ✅
+Find the index of the word "popular". ✅
+Extract the word "powerful" using slice(). ✅
+Replace "JavaScript" with "JS" using replace(). ✅
+Check if the string contains the word "language" using includes(). ✅
+---
+Part 2: Arrays and Array Methods
+Task 2: Array Operations
+1. Create an array fruits containing the following values: ['Apple', 'Banana', 'Mango', 'Orange', 'Grapes'] ✅
+2. Perform the following operations:
+Add "Pineapple" to the end of the array. ✅
+Remove the first element from the array. ✅
+Insert "Strawberry" at the second position in the array. Find the index of "Mango". ✅
+Remove "Orange" from the array. ✅
+Sort the array in alphabetical order. ✅
+Reverse the order of the array. ✅
+---
+Part 3: Object Constructor Function
+Task 3: Creating and Using a Constructor Function
+1. Create a constructor function Person with the following properties: name (string)
+age (number)
+gender (string)
+greet (method that logs "Hello, my name is [name].")
+2. Create three instances of the Person object with different values.
+3. Call the greet method for each object.
+---
+Part 4: Object Manipulation and Nested Object Access
+Task 4: Object Manipulation
+1. Create an object car with the following properties:
+brand (string)
+model (string)
+year (number)
+features (array of strings, e.g., ['Air Conditioning', 'Sunroof', 'Bluetooth']) 2. Perform the following operations:
+Add a new feature to the features array.Update the year property.
+Delete the model property.
+Log the updated object.
+Task 5: Accessing Nested Objects in an Array
+1. Create an array students containing multiple objects, each representing a student with the following properties:
+name (string)
+age (number)
+grades (object with subjects as keys and scores as values, e.g., {math: 90, science: 85})
+2. Perform the following operations:
+Retrieve the science grade of the second student.
+Update the math grade of the first student.
+Add a new subject and grade to one of the students.
+---
+Submission Guidelines:
+Write all the solutions in a single JavaScript file.
+Add comments explaining each operation.
+---
+Bonus Task:
+Modify the Person constructor to include a method isAdult() that returns true if the age is 18 or above, otherwise false.
+Create an array of Person objects and filter out the adults.
