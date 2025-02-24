@@ -1,0 +1,48 @@
+//javascript + ES6 + in interview JD they ask.
+// JavaScript release: 1997, 98, 99 2005, 2009
+//ES5 release: 2009
+// ES6 release: 2015 after 2015 we get yearly additions in ES6 release.
+// ES6 is also known as ES2015.
+// ES6 is a major update to JavaScript that includes dozens of new features.
+// ES6 is a significant update to the language, and the first update to the language since ES5 was standardized in 2009.
+
+// 1. let and const
+// 2. Arrow function
+// 3. Default parameter
+// 4. Spread operator
+// 5. Destructuring
+// 6. Template literals
+// 7. Object literals
+// 8. Rest parameter
+// 9. Classes
+// 10. Promises
+// 11. Async/Await
+// 12. Modules (import & export)
+// 13. Generators
+// 14. Maps and Sets. Map(), reduce(), filter(), forEach(), find(), findIndex(), some(), every(), includes(), sort(), reverse(), concat(), slice(), splice(), push(), pop(), shift(), unshift(), indexOf(), lastIndexOf(), isArray(), toString(), join(), fill(), copyWithin(), entries(), keys(), values(), from(), of(), reduceRight(), flat(), flatMap(), Array.isArray(), Array.of(), Array.from(), Array.prototype.map(), Array.prototype.reduce(), Array.prototype.filter(), Array.prototype.forEach(), Array.prototype.find(), Array.prototype.findIndex(), Array.prototype.some(), Array.prototype.every(), Array.prototype.includes(), Array.prototype.sort(), Array.prototype.reverse(), Array.prototype.concat(), Array.prototype.slice(), Array.prototype.splice(), Array.prototype.push(), Array.prototype.pop(), Array.prototype.shift(), Array.prototype.unshift(), Array.prototype.indexOf(), Array.prototype.lastIndexOf(), Array.prototype.isArray(), Array.prototype.toString(), Array.prototype.join(), Array.prototype.fill(), Array.prototype.copyWithin(), Array.prototype.entries(), Array.prototype.keys(), Array.prototype.values(), Array.prototype.from(), Array.prototype.of(), Array.prototype.reduceRight(), Array.prototype.flat(), Array.prototype.flatMap()
+// 15. Symbols
+// 16. Classes
+// 17. Inheritance
+// 18. Encapsulation
+// 19. Polymorphism
+// 20. Composition
+// 21. Higher-order functions
+// 22. Currying
+// 23. Memoization
+// 24. Recursion
+// 25. Functional programming
+// 26. Immutable data structures
+// 27. Error handling
+// 28. Event handling
+// 29. DOM manipulation
+// 30. Web APIs
+// 31. WebSockets
+// 32. Local storage
+// 33. Session storage
+// 34. IndexedDB
+// 35. Web workers
+// 36. Service workers
+// 37. Caching
+// 38. Progressive web apps
+// 39. WebRTC
+// 40. WebSockets
