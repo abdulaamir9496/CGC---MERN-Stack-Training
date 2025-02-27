@@ -1,0 +1,38 @@
+TDC FullStack Assignment No. 6
+Assignment: Bank Account Management System
+Objective:
+Create a system to manage bank accounts using JavaScript classes. 
+The system should allow account creation, deposits, withdrawals, and transfers between accounts while ensuring all operations follow the given rules.
+----------------------------------------------------------------
+Requirements:
+1. Data Storage:
+Create an empty array named accounts to store all bank accounts.
+----------------------------------------------------------------
+2. Bank Account Class:
+Create a class BankAccount that should have the following properties: accountNumber: A string that must start with "IN" and be exactly 12 characters long. balance: Initial balance with a minimum limit of ₹1000.
+The class should include methods:
+deposit(amount): Adds money to the account.
+withdraw(amount): Withdraws money while ensuring the minimum balance limit is maintained.
+transfer(amount, targetAccountNumber): Transfers money to another account in the array while validating sufficient funds.
+----------------------------------------------------------------
+3. Account Creation Function:
+Write a function createAccount(accountNumber, initialAmount) that:
+Ensures the accountNumber starts with "IN" and is 12 characters long. 
+Ensures initialAmount is at least ₹1000.
+If valid, creates an instance of BankAccount and adds it to the accounts array.
+----------------------------------------------------------------
+4. Transactions:
+Implement deposit, withdraw, and transfer functionalities. Ensure proper validation before performing any transaction.
+----------------------------------------------------------------
+Example Usage:
+// Creating accounts
+createAccount("IN1234567890", 5000); createAccount("IN0987654321", 3000);
+// Depositing money
+accounts[0].deposit(2000);
+// Withdrawing money
+accounts[1].withdraw(500);
+// Transferring money
+accounts[0].transfer(1000, "IN0987654321");
+----------------------------------------------------------------
+Bonus Challenge:
+Display Account Details: Implement a function to print details of all accounts. Handle Errors Properly: Display meaningful messages if transactions fail.
