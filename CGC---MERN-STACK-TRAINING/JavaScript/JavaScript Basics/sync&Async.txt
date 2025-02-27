@@ -1,3 +1,14 @@
+In JavaScript:
+
+- **Synchronous**: Code is executed one line at a time, in order, and the next line waits for the previous one to finish. This can block the execution, causing delays.
+
+- **Asynchronous**: Code is executed without waiting for the previous task to finish. This allows other operations (like fetching data, timers, etc.) to run while waiting, making the app more efficient.
+
+Example:
+- **Synchronous**: `console.log("Hello"); console.log("World");`
+- **Asynchronous**: `setTimeout(() => console.log("Hello"), 1000); console.log("World");`
+---------------------------------------------------------------
+
 In JavaScript, **synchronous** and **asynchronous** refer to how operations are executed in relation to each other—whether they run one after another (synchronous) or whether some tasks run in the background while others continue (asynchronous).
 
 ### 1. **Synchronous (Blocking) Execution**
