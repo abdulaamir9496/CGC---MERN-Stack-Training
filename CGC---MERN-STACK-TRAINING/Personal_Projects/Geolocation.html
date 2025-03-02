@@ -1,0 +1,25 @@
+<form id="myForm">
+    <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent form submission
+        
+          // Check if geolocation is available
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+            
+              // You can now use the latitude and longitude (e.g., send them with the form data)
+                console.log('Latitude:', latitude);
+                console.log('Longitude:', longitude);
+            }, function(error) {
+                console.error('Error getting location:', error);
+            });
+            } else {
+            console.log('Geolocation is not supported by this browser.');
+            }
+        });
+</script>
