@@ -12,7 +12,7 @@ console.log(subtract(5, 3));  // Output: 2
 import multiply from './math.js';
 
 console.log(multiply(2, 3));  // Output: 6
-
+  
     // Renaming imported functions
 import { add as sum, subtract as difference } from './math.js';
 
