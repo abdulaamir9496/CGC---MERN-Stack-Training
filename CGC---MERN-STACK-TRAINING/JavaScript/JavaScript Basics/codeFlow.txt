@@ -1,0 +1,15 @@
+Here's a brief overview of each concept:
+
+1. **Call Stack**: It's a data structure that keeps track of the execution context of functions in a program. When a function is called, it's pushed onto the stack, and when it finishes, it's popped off. It's used to keep track of what the program is doing at any given time.
+
+2. **Task Queue** (or **Callback Queue**): This is a queue where tasks (callbacks or events) are placed after they are ready to be executed. These are usually tasks that are triggered by events like user input or network responses. The tasks are executed after the call stack is empty.
+
+3. **Microtask Queue**: A special queue that holds tasks like promises' `.then()` or `async/await` callbacks. Microtasks have a higher priority than tasks in the task queue and are processed before the task queue after the current stack is cleared.
+
+4. **Event Loop**: It continuously checks both the call stack and the task queues (microtask and task queues). If the call stack is empty, it checks the microtask queue and executes any pending tasks. Once the microtask queue is empty, it moves to the task queue and starts executing tasks. The event loop ensures the non-blocking, asynchronous behavior in JavaScript.
+
+In short: 
+- **Call Stack** = Tracks function calls.
+- **Task Queue** = Holds events to be processed after the call stack is clear.
+- **Microtask Queue** = Holds promise callbacks, which have priority over task queue events.
+- **Event Loop** = Manages execution by checking the call stack and queues.

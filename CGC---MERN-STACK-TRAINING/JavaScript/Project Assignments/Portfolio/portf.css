@@ -1,0 +1,272 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    background: rgba(8, 27, 41, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+}
+
+.header:hover {
+    background: rgba(8, 27, 41, 1);
+}
+
+.logo {
+    color: #00abf0;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    color: #0282be;
+    transform: scale(1.1);
+}
+
+.navbar a {
+    color: #ededed;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #00abf0;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+    width: 100%;
+}
+
+.navbar a:hover, 
+.navbar a.active {
+    color: #00abf0;
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-content {
+    width: 50%;
+    z-index: 2;
+    position: relative;
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    color: #ededed;
+    position: relative;
+}
+
+.home-content h3 {
+    font-size: 1.8rem;
+    color: #00abf0;
+    margin: 10px 0;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-content p {
+    font-size: 1.1rem;
+    color: #b0c4de;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out 0.7s forwards;
+}
+
+/* Social Icons */
+.home-sci {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out 1s forwards;
+}
+
+.home-sci a {
+    font-size: 24px;
+    color: #ededed;
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home-sci a:hover {
+    color: #00abf0;
+    transform: scale(1.2);
+}
+
+/* Hire Me Form */
+.contact {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(10, 43, 61, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #0a2b3d;
+    color: #ededed;
+    font-size: 16px;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    outline: none;
+    background: #122c40;
+}
+
+.contact button {
+    padding: 12px;
+    background: #00abf0;
+    color: #081b29;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.contact button:hover {
+    background: #0282be;
+    transform: scale(1.05);
+}
+
+/* Projects Section */
+.projects {
+    padding: 80px 10%;
+    background: #081b29;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #00abf0;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background: #0a2b3d;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #00abf0;
+}
+
+.project:hover {
+    background: #00abf0;
+    color: #081b29;
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 14px;
+    color: #b0c4de;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #081b29;
+    font-size: 16px;
+    color: #b0c4de;
+}
