@@ -1,0 +1,93 @@
+//REST API
+
+ * A **REST API** (Representational State Transfer API) is a way for different software systems to communicate over the web using standard HTTP methods (GET, POST, PUT, DELETE). It allows clients to interact with a server and access resources (such as data or functionality) in a simple, stateless manner.
+
+Key features:
+- **Stateless**: Each request from the client to the server must contain all the information needed to understand and process the request (no session stored on the server).
+- **CRUD Operations**: It typically supports operations like **Create** (POST), **Read** (GET), **Update** (PUT), and **Delete** (DELETE).
+- **URL-based**: Resources are accessed via URLs, and data is usually exchanged in formats like JSON or XML.
+
+In short, REST APIs allow apps or services to talk to each other over the web using HTTP.
+------------------------------------------------------------------------------------
+**Client-Server Architecture** is a network model where two entities, a **client** and a **server**, interact over a network.
+
+- **Client**: The client is the requester. It is typically the user interface (UI) or application that sends requests for resources or services from the server.
+- **Server**: The server is the provider. It listens for requests from clients, processes them, and responds with the requested data or performs actions.
+
+### Key Points:
+- **Client**: Sends requests, typically through a web browser or app.
+- **Server**: Processes requests, manages resources, and returns responses.
+- **Communication**: They communicate over a network, often using protocols like HTTP.
+- **Separation**: Clients and servers can be separate entities, often allowing for scalability and flexibility.
+
+In short, client-server architecture divides tasks between providers (servers) and consumers (clients).
+HTTP.
+------------------------------------------------------------------------------------
+A **Uniform Interface** is a key principle of **RESTful APIs**. It means that the interface between the client and server is standardized and consistent, using a fixed set of rules. This simplifies communication between different systems and ensures that all interactions follow the same conventions.
+
+### Key Points:
+1. **Standard HTTP Methods**: The interface uses HTTP methods like GET, POST, PUT/PATCH, DELETE to perform actions on resources.
+2. **Resource Identification**: Resources are identified by URLs (Uniform Resource Identifiers).
+3. **Standardized Responses**: Responses are typically formatted in JSON or XML.
+
+In short, a uniform interface ensures that clients and servers communicate in a predictable, consistent manner, making the API easier to use and maintain.
+------------------------------------------------------------------------------------
+Homework: how rest API builds? 3 principles above? 
+
+Creating an **API Gateway** involves setting up a service that acts as an entry point for all client requests and forwards them to appropriate backend services or APIs. It helps with tasks like request routing, load balancing, authentication, rate limiting, etc.
+
+### Steps to Create an API Gateway:
+
+1. **Choose a Framework/Service**:
+   - You can build your own API Gateway using a backend framework (Node.js, Express, etc.), or you can use a managed service like **AWS API Gateway**, **Kong**, or **Nginx**.
+
+2. **Set Up the Gateway Server**:
+   - If you’re using Node.js and Express, you can create a server to handle incoming requests and route them to backend services.
+
+   Example using Node.js and Express:
+   ```javascript
+   const express = require('express');
+   const app = express();
+
+   // Example route to forward API requests
+   app.use('/api/service1', (req, res) => {
+     // Forward request to service 1
+     res.redirect('http://service1.local' + req.url);
+   });
+
+   app.use('/api/service2', (req, res) => {
+     // Forward request to service 2
+     res.redirect('http://service2.local' + req.url);
+   });
+
+   app.listen(3000, () => {
+     console.log('API Gateway running on port 3000');
+   });
+   ```
+
+3. **Routing and Load Balancing**:
+   - Set up routing logic to direct requests to appropriate services based on path, HTTP method, or headers.
+   - Implement load balancing to distribute requests evenly across your backend services (e.g., using Nginx or a library like **http-proxy-middleware** in Node.js).
+
+4. **Authentication & Authorization**:
+   - Integrate security mechanisms like OAuth2, JWT (JSON Web Tokens), or API keys to authenticate and authorize requests before they reach your backend services.
+   
+5. **Logging and Monitoring**:
+   - Add logging mechanisms to monitor traffic through the gateway (e.g., using tools like **Winston** in Node.js).
+   - Implement metrics collection to track performance.
+
+6. **Rate Limiting & Caching**:
+   - Implement rate-limiting to prevent overuse of your services and caching for optimized performance and reduced load.
+
+### Managed API Gateways:
+
+- **AWS API Gateway**: AWS provides a fully managed API Gateway service that handles routing, security, rate-limiting, and monitoring without you needing to build it yourself.
+- **Kong**: An open-source API Gateway that offers features like load balancing, authentication, and traffic control.
+
+### In Summary:
+To create an API Gateway:
+- Set up a routing layer (e.g., using Express or Nginx).
+- Forward client requests to appropriate services.
+- Add security, load balancing, and monitoring features.
+
+Let me know if you'd like more details on any of these steps!

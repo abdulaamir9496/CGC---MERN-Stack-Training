@@ -7,15 +7,15 @@
 // console.log("Welcome to coder's camp");
 
 //how to import a module in JavaScript
-const http = require("http");
+const http = require("http");   //why https?
 const { json } = require("stream/consumers");
 // console.log(http);
 
 //controllers are request handler: request & resolve
-let controller = function(res, req){
-    // console.log("Hello from controller");
-    console.log(req);
-};
+// let controller = function(res, req){
+//     console.log("Hello from controller");
+//     // console.log(req);
+// };
 
 let books = [
     {
@@ -36,19 +36,32 @@ let books = [
         "author": "Author 3",
         "price": 14.99
     },
-]
+];
 
 //create server: create a server using http module
-//request handler
+//request handler or controller
 const server = http.createServer((req, res) => {
     console.log(req.url);
     if(req.url.includes("Welcome")) {
-    res.statusCode = 200;
-    res.write("Welcome to my server!");
+    // res.statusCode = 200;
+    // res.write("Welcome to my server!");
     }
     else if(req.url.includes("books")) {
         res.statusCode = 200;
         res.write(JSON.stringify(books));
+
+        if(req.url.includes("1")){
+            res.statusCode = 200;
+            res.write(JSON.stringify(books[0]));
+        }
+        else if(req.url.includes("2")){
+            res.statusCode = 200;
+            res.write(JSON.stringify(books[1]));
+        }
+        else {
+            res.statusCode = 200;
+            res.write("Book not found");
+        }
     }
     else {
     res.statusCode = 404;
@@ -57,7 +70,7 @@ const server = http.createServer((req, res) => {
     res.end();
 });
 //running a server
-server.listen(5000, () => console.log("Server has started. Welcome!"));
+server.listen(5000, () => console.log("Server 5000 has started. Welcome!"));
 
 //servers used for front end: 3000 and for backend server: 5000
 
