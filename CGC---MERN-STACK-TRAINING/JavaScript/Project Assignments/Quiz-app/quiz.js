@@ -41,22 +41,17 @@ const quizData = [
 ];
 
 //2. Selecting HTML Elements
-const quiz = document.getElementById("quiz");
-const answerEls = document.querySelectorAll(".answer");
-const questionEl = document.getElementById("question");
-const a_text = document.getElementById("a_text");
-const b_text = document.getElementById("b_text");
-const c_text = document.getElementById("c_text");
-const d_text = document.getElementById("d_text");
-const submitBtn = document.getElementById("submit");
-
 // What it does:  
 // - Uses `document.getElementById()` and `document.querySelectorAll()` to select the following elements:
-//   - **`quiz`**: The main quiz container.
-//   - **`answerEls`**: All the radio buttons (options).
-//   - **`questionEl`**: The `<h2>` where the question is displayed.
-//   - **`a_text`, `b_text`, `c_text`, `d_text`**: Spans for displaying the answer choices.
-//   - **`submitBtn`**: The "Submit" button.
+const quiz = document.getElementById("quiz");   //   - **`quiz`**: The main quiz container.
+const answerEls = document.querySelectorAll(".answer");   //   - **`answerEls`**: All the radio buttons (options).
+const questionEl = document.getElementById("question");   //   - **`questionEl`**: The `<h2>` where the question is displayed.
+const a_text = document.getElementById("a_text");   //`a_text`**: Spans for displaying the answer choices.
+const b_text = document.getElementById("b_text");   //`b_text`**: Spans for displaying the answer choices.
+const c_text = document.getElementById("c_text");   //`c_text`**: Spans for displaying the answer choices.
+const d_text = document.getElementById("d_text");   //`d_text`**: Spans for displaying the answer choices.
+const submitBtn = document.getElementById("submit");   //   - **`submitBtn`**: The "Submit" button.
+
 
 // Why it’s useful:  
 // - These variables allow you to **manipulate the DOM** (change questions, check selected answers, etc.).
@@ -145,7 +140,7 @@ submitBtn.addEventListener("click", () => {
 // What it does:  
 // 1. **Gets the selected answer:**  
 //    - Calls `getSelected()` to retrieve the user’s choice.
-    
+
 // 2. **Checks correctness:**  
 //    - Compares the user's selection with `quizData[currentQuiz].correct`.
 //    - If correct, **increments the score**.
