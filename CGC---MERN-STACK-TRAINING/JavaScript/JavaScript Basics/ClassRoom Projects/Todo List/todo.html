@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Application</title>
+    <link rel="stylesheet" href="todo.css">
+    <style>
+        .completed{
+            text-decoration: line-through;
+            background: #7cb88a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="changeColor">
+        <button onclick="changeBackgroundColor()">I can Change normal background color</button>
+        <button onclick="changeGradientColor()">I can Change gradient background color</button>
+        <p id="normalColor"></p>
+        <p id="gradientColor"></p>
+        <h2>Todo List</h2>
+        <div class="input-box">
+            <input type="text" id="taskInput" placeholder="Input Task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
