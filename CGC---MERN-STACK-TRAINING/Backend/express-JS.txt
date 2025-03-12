@@ -1,0 +1,26 @@
+### 🟢 **Express.js**:  
+
+**Express.js** is a fast, minimal, and flexible **Node.js** web application framework used to build web servers and APIs.  
+
+### ✅ **Key Features:**  
+- **Lightweight**: Minimal structure for quick API and web app creation.  
+- **Middleware**: Customizable request/response handling.  
+- **Routing**: Defines routes for handling HTTP methods (GET, POST, etc.).  
+- **RESTful APIs**: Easy to create and manage RESTful services.  
+- **Scalable**: Suitable for small to large-scale applications.  
+
+### 📜 **Basic Example:**
+```javascript
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello, Express!');
+});
+
+app.listen(3000, () => {
+  console.log('Server running on port 3000');
+});
+```
+
+Would you like a visual diagram or deeper insights?

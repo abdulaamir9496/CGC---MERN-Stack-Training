@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/abdulaamir9496/CGC-Backend/issues"
   },
-  "homepage": "https://github.com/abdulaamir9496/CGC-Backend#readme"
+  "homepage": "https://github.com/abdulaamir9496/CGC-Backend#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
