@@ -23,4 +23,3 @@ app.listen(3000, () => {
 });
 ```
 
-Would you like a visual diagram or deeper insights?
