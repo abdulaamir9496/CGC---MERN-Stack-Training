@@ -12,40 +12,52 @@ let books = [
 app.use(express.json());
 // Home route
 app.get('/', (req, res) => {
-    res.send('This is the home page. Welcome to Express.js world!');
+    res.send('<h1>This is the home page. Welcome to Express.js world!</h1>');
 });
 
 // About route
 app.get('/about', (req, res) => {
-    res.send('This is the about page.');
+    res.send('<h1>This is the about page.</h1>');
 });
 
 // Contact route
 app.get('/contact', (req, res) => {
-    res.send('This is the contact page.');
+    res.send('<h1>This is the contact page.</h1>');
 });
 
 // Get all books
 app.get('/books', (req, res) => {
-    res.status(200).json(books);
+    res.status(200).json(books);   //data goes in json format
 });
 
 // Get a single book by id
 app.get('/books/:id', (req, res) => {
     const bookId = parseInt(req.params.id);
-    const book = books.find(b => b.id === bookId);
+    const book = books.find(value => value.id === bookId);
 
-    if (!book) {
-        return res.status(404).send('No book found');
+    if (book) {
+        res.status(200).json(books)
+        // return res.status(404).send('<h1>No id found from the books</h1>');
+    } else {
+        res.status(404).send('<h1>No books found. Please check the id.</h1>');
     }
-
-    res.status(200).json(book);
 });
+
+// app.get('/books/:author', (req, res) => {
+//     const bookAuthor = parseInt(req.params.author);
+//     const book = books.find(b => b.author === bookAuthor);
+
+//     if(!book) {
+//         return res.status(404).send('<h1>No Author found from the books</h1>')
+//     }
+// });
 
 // Handle incorrect routes
-app.use((req, res) => {
-    res.status(404).send('URL is incorrect, Enter the correct URL');
-});
+// app.use((req, res) => {
+//     res.status(404).send('<h1>URL is incorrect, Enter the correct URL</h1>');
+// });
+
+
 
 // Start the server
 const PORT = 5000;
