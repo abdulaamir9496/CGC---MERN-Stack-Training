@@ -10,6 +10,7 @@ let books = [
 
 // Middleware to parse JSON (optional for future use)
 app.use(express.json());
+
 // Home route
 app.get('/', (req, res) => {
     res.send('<h1>This is the home page. Welcome to Express.js world!</h1>');
@@ -59,7 +60,7 @@ app.get('/books/:id', (req, res) => {
 
 //POST request
 app.post('/books/create', (req, res) => {
-    let newID = books.length + 1;
+    let newID = books[books.length - 1].id + 1;
     let newBook = {
         id: newID,
         ...req.body,
