@@ -57,11 +57,62 @@ app.get('/books/:id', (req, res) => {
 //     res.status(404).send('<h1>URL is incorrect, Enter the correct URL</h1>');
 // });
 
+//POST request
+app.post('/books/create', (req, res) => {
+    let newID = books.length + 1;
+    let newBook = {
+        id: newID,
+        ...req.body,
+    };  
+    books.push(newBook);
+    res.status(201).json(books);  //201 teh request s created.
+    // console.log(res.status(200).json(books));
+});
 
+app.put("/books/update", (req, res) => {
+    let bookId = req.body.id;
+    let newBooksArr = books.map((book) => {
+        if(book.id === bookId) {
+            book.name = req.body.name || book.name;
+            book.price = req.body.req;
+        }
+        return book;
+    })
+    books = newBooksArr;
+    res.status(200).json(books);
+})
+
+//PATCH REQUEST
+app.patch("/books/update", (req, res) => {
+    let bookId = req.body.id;
+    let newBooksArr = books.map((book) => {
+        if(book.id === bookId) {
+            book = {
+                ...book,
+                ...req.body,
+            }
+        }
+        return book;
+    })
+    books = newBooksArr;
+    res.status(200).json(books);
+})
+
+//DELETE Method: no body or data send in ths delete method.
+app.delete("/books/remove/:id", (req, res) => {
+    let { id } = req.params;
+    let newBooksArr = books.filter((book) => book.id !== parseInt(id));
+    books = newBooksArr;
+    res.status(200).json(books);
+    // console.log(books);
+});
 
 // Start the server
 const PORT = 5000;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+
+//for pst and get all teh request go through these json format (parse the obj): frequest goes through all the middle wares . It shoud match the method lke: post or get. if method match it will check for end point.
+app.use(express.json());
 
 //request goes to through Use : middleware (everytime )
 // app.use((req, res) => {
