@@ -11,6 +11,9 @@ let books = [
 // Middleware to parse JSON (optional for future use)
 app.use(express.json());
 
+// app.use(require("./routes/routes"));
+app.use(require("./routes/routes"));
+
 // Home route
 app.get('/', (req, res) => {
     res.send('<h1>This is the home page. Welcome to Express.js world!</h1>');
@@ -66,7 +69,7 @@ app.post('/books/create', (req, res) => {
         ...req.body,
     };  
     books.push(newBook);
-    res.status(201).json(books);  //201 teh request s created.
+    res.status(201).json(books);  //201 the request created.
     // console.log(res.status(200).json(books));
 });
 

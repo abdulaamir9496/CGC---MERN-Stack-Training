@@ -1,0 +1,8 @@
+Step by Step: 
+Createschema (model)
+controller
+layers
+collections
+model
+CRUD Operations
+
