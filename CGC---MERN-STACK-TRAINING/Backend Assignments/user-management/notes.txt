@@ -1,0 +1,26 @@
+using morgan
+using ibuild modules & packages 'fs' 
+using ibuild modules & packages 'path' 
+
+
+✅ **Why use a logger in Node.js?**
+
+1. 📄 **Track Requests & Responses:**  
+   - Logs incoming requests, status codes, and response times.  
+
+2. 🐞 **Debugging & Troubleshooting:**  
+   - Helps identify issues by reviewing logs.  
+
+3. 📊 **Monitor Application Activity:**  
+   - Tracks user interactions and errors.  
+
+4. 🔥 **Error Tracking:**  
+   - Logs errors for later analysis and debugging.  
+
+5. 📚 **Audit & Compliance:**  
+   - Keeps records of operations for security and auditing.  
+
+✔️ **Tools:** `morgan`, `winston`, `pino` are popular Node.js loggers.
+
+
+

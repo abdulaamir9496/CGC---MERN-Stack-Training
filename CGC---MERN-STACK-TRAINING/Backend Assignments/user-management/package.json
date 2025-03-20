@@ -4,12 +4,10 @@
   "description": "Backend Sessions At CGC",
   "main": "server.js",
   "scripts": {
+    "dev": "nodemon --env-file=.env server.js ",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"nodemon server1.js\" \"nodemon server2.js\""
-  },
-  "repository": {
     "type": "git",
-    "url": "git+https://github.com/abdulaamir9496/CGC-Backend.git"
+    "url": "git+https://github.com/iamsayeeduddin/cgc-backend-1.git"
   },
   "keywords": [
     "Backend"
@@ -17,12 +15,16 @@
   "author": "Abdul Aamir",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/abdulaamir9496/CGC-Backend/issues"
+    "url": "https://github.com/abdulaamir9496/CGC-Backend"
   },
-  "homepage": "https://github.com/abdulaamir9496/CGC-Backend#readme",
+  "homepage": "https://github.com/abdulaamir9496/CGC-Backend-1#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bunyan": "^1.8.15",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.12.1"
+    "mongoose": "^8.12.1",
+    "morgan": "^1.10.0"
   }
 }

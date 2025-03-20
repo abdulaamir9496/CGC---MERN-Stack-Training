@@ -1,10 +1,46 @@
 const ProductModel = require("../models/productModel");
 const { responseObjGenerator } = require("../utils/utils");
 
+// PAGINATION
+// page => The page being visited
+// pageSie => The number of items per page (records per page)
+// Skip => (page -1) * paegSize The number of items to skip before starting to return items
+
 const getProducts = async (req, res) => {
-    const products = await ProductModel.find();
-    res.status(200).json(products);
+    const { page, pageSize } = req.params;
+    // console.log(page, pageSize);
+    const skip = (page - 1) * pageSize;
+    const data = req.body;
+    let filter = {};
+    if(data) {
+        if(data.isSearch) {
+            filter = {
+                $or: [
+                    {name: {$regex: data.searchTerm, $options: 'i'}}, {category: {$regex: data.searchTerm, $options: 'i'}}
+                ]
+            };
+        } else {
+            filter = {
+                ...data 
+            };
+        }
+    };
+
+    // SORTING: on basis of rating/reveiws or price basis
+    const { sort, dir } = req.query;
+    console.log(req.query);
+
+    const products = await ProductModel.find().
+        sort({
+            [sort]: dir,
+        })
+        .skip(skip)
+        .limit(pageSize);  //order matters for skipping the page
+    const count = await ProductModel.countDocuments();  //Total records
+    res.status(200).json(products, count);
 };
+
+//using filters :DRY (dont repeat yourself while coding)
 
 const addProduct = async (req, res) => {
     try {

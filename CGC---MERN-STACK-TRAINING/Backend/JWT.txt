@@ -1,0 +1,37 @@
+JWT (Json Web Token) is decryptable
+JSON object format
+We use JWT making user not login instead provided Token
+TypeOf token ?
+1. Header of the Token
+2. Payload of the Token (email, name, role, expire of the token)
+3. signature part (It creates signature from header and payload data and make a encryptable token: signature(crypto graphic hash))
+We should give secret key to verify the token.
+
+check more details in below link: 
+https://jwt.io/
+
+Encoded value:
+Valid JWT
+
+Signature Verified
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.KMUFsIDTnFmyG3nMiGM6H9FNFUROf3wh7SmqJp-QV30
+
+
+Decoded Header:
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+
+Decoded Payload:
+{
+  "sub": "1234567890",
+  "name": "John Doe",
+  "admin": true,
+  "iat": 1516239022
+}
+
+JWT Signature Verification:
+Secret
+Valid secret
+a-string-secret-at-least-256-bits-long

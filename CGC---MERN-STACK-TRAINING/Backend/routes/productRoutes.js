@@ -4,6 +4,8 @@ const productCtrl = require("../controllers/productCtrl");
 const router = express.Router();
 
 router.get("/", productCtrl.getProducts);
+router.get("/page/:page/pageSize/:pageSize", productCtrl.getProducts);
+router.get("/page/:page/pageSize/:pageSize", productCtrl.getProducts);
 router.post("/addProduct", productCtrl.addProduct);
 router.patch("/updateProduct/:id", productCtrl.updateProduct);
 router.put("/updateProduct/:id", productCtrl.updateCompProduct);
